@@ -1,0 +1,21 @@
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.env
+
+# Archivos de configuración locales
+*.db
+*.sqlite3
+
+# Archivos de Excel y CSV generados
+*.xlsx
+*.csv
+
+# Archivos temporales
+*.log
+*.tmp
