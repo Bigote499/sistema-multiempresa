@@ -121,13 +121,13 @@ class EmpresaApp(QWidget):
                     # refrescar tabla desde DB
                     empresas = listar_empresas(cliente)
                     df = pd.DataFrame([{
-                        "id": e.id,
-                        "nombre": e.nombre,
-                        "cuit": e.cuit,
-                        "email": e.email,
-                        "web": e.web,
-                        "domicilio": e.domicilio,
-                        "contacto": e.contacto
+                        "id": e["id"],
+                        "nombre": e["nombre"],
+                        "cuit": e["cuit"],
+                        "email": e["email"],
+                        "web": e["web"],
+                        "domicilio": e["domicilio"],
+                        "contacto": e["contacto"]
                     } for e in empresas])
                     self.df = df
                     self.mostrar_datos(self.df)
