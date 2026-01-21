@@ -77,7 +77,13 @@ Al exportar los datos de empresas, el sistema genera un archivo .xlsx con format
 - Columnas con ancho ajustado automáticamente
 - Texto alineado y ajustado para mejor lectura
 Ejemplo de tabla exportada:
-![Ejemplo de Excel exportado](image/Excel_demo.png)
+
+![Ejemplo de App flet](image/flet_demo1.png)
+![Ejemplo de ingreso de datos](image/ingreso_de_datos_demo2.png)
+![Ejemplo datos y guardado](image/datos_demo3.png)
+![Ejemplo convertir a Excel](image/convertir_a_excel_demo4.png)
+![Ejemplo tabla Excel](image/Excel_demo5.png)
+![Ejemplo tabla Excel](image/Excel_demo6.png)
 
 
 ## 📄 Licencia

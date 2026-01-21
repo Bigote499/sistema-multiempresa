@@ -12,7 +12,13 @@ Un sistema pensado para pequeñas y medianas empresas que necesitan **gestionar 
 ## 🖼️ Capturas de pantalla
 Ejemplo de salida en Excel:
 
-![Ejemplo de Excel exportado](docs/imagenes/excel_demo.png)
+![Ejemplo de App flet](image/flet_demo1.png)
+![Ejemplo de ingreso de datos](image/ingreso_de_datos_demo2.png)
+![Ejemplo datos y guardado](image/datos_demo3.png)
+![Ejemplo convertir a Excel](image/convertir_a_excel_demo4.png)
+![Ejemplo tabla Excel](image/Excel_demo5.png)
+![Ejemplo tabla Excel](image/Excel_demo6.png)
+
 
 ## ▶️ Demo
 El sistema permite:
