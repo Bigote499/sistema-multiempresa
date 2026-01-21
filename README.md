@@ -83,3 +83,8 @@ image/Excel_demo.png
 ## 📄 Licencia
 Este proyecto se distribuye bajo la Licencia MIT.  
 Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+👉 ¿Querés ver una presentación visual orientada a clientes?  
+Consultá el archivo [README_comercial.md](README_comercial.md)
+
+
