@@ -19,3 +19,17 @@ venv/
 # Archivos temporales
 *.log
 *.tmp
+*.bak
+
+# Archivos y carpetas generados por PyInstaller
+/build/
+/dist/
+*.spec
+*.exe
+
+# Archivos de sistema
+*.DS_Store
+Thumbs.db
+
+# Archivos de configuración de VS Code (opcional)
+.vscode/
