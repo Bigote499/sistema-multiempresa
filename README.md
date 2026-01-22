@@ -42,7 +42,6 @@ sistema-multiempresa/
    git clone https://github.com/tu_usuario/sistema-multiempresa.git
    cd sistema-multiempresa
 
-
 2. Crear entorno virtual e instalar dependencias:
 python -m venv venv
 venv\Scripts\activate      # Windows
@@ -50,7 +49,6 @@ pip install -r requirements.txt
 
 3. (Opcional) Instalar herramientas de desarrollo:
 pip install -r dev-requirements.txt
-
 
 🖥️ Compatibilidad
 Este sistema fue desarrollado y probado en Windows 10/11 con Python 3.10+.
@@ -60,12 +58,25 @@ La arquitectura modular permite adaptarlo fácilmente a otros entornos como Linu
 Ejecutar la aplicación:
 python main.py
 
-
 📌 Próximos pasos
 - Exportar múltiples tablas en hojas separadas.
 - Agregar reportes PDF con ReportLab.
 - Mejorar validaciones y mensajes de error.
 - Documentación para despliegue en plataformas freelance.
+
+## Ejecución como aplicación de escritorio (.exe)
+
+Además de ejecutar el sistema desde código fuente, podés usar la versión compilada como aplicación de escritorio:
+
+1. Ir a la carpeta `dist/` generada por PyInstaller.
+2. Ejecutar el archivo `SistemaMultiEmpresa.exe` haciendo doble clic.
+3. No requiere instalación de Python ni dependencias.
+4. Incluye ícono personalizado y ventana sin consola.
+
+Para compilar el `.exe` desde código fuente:
+```bash
+pyinstaller --onefile --windowed --icon="icon/icono_gen.ico" --name=SistemaMultiEmpresa main.py
+
 🧠 Autor
 Desarrollado por Sergio Sosa — apasionado por herramientas prácticas, modulares y profesionales para negocios reales.
 
