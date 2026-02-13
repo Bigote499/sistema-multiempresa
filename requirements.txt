@@ -1,0 +1,8 @@
+PyQt5
+SQLAlchemy
+pandas
+openpyxl
+reportlab
+python-dotenv
+PyYAML
+flet

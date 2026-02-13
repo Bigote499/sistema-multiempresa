@@ -1,0 +1,13 @@
+ipython
+jupyter
+debugpy
+traitlets
+matplotlib
+numpy
+cookiecutter
+GitPython
+fastapi
+uvicorn
+watchdog
+requests
+beautifulsoup4
