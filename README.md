@@ -1,93 +1,90 @@
-# Sistema Multiempresa
+🌐 Read this in [Spanish](README_es.md)
 
-Este proyecto permite gestionar datos de múltiples empresas, almacenarlos en bases SQLAlchemy y exportarlos a Excel con formato profesional. Ideal para negocios, desarrolladores freelance o entornos administrativos.
+#Multi-Company System
 
-## 🚀 Funcionalidades principales
+This project allows managing data from multiple companies, storing them in SQLAlchemy databases, and exporting them to Excel with professional formatting. Ideal for businesses, freelance developers, or administrative environments.
 
-- Alta, edición y eliminación de empresas desde interfaz gráfica (PyQt5).
-- Exportación a Excel con:
-  - Encabezados en negrita y mayúsculas
-  - Filtros automáticos
-  - Congelado de fila y columnas (ID y NOMBRE)
-  - Ajuste automático de ancho de columnas
-  - Alineación y ajuste de texto
-- Validación de CUIT y campos de entrada.
-- Separación modular del código (interfaz, lógica, utilidades, formato).
-- Compatible con múltiples bases de datos `.db`.
+## 🚀 Main Features
 
-## 🧱 Estructura del proyecto
+• 	Create, edit, and delete companies through a graphical interface (PyQt5).
+• 	Export to Excel with:
+• 	Bold and uppercase headers
+• 	Automatic filters
+• 	Frozen header row and key columns (ID and NAME)
+• 	Automatic column width adjustment
+• 	Text alignment and wrapping
+• 	CUIT validation and input field checks.
+• 	Modular code separation (interface, logic, utilities, formatting).
+• 	Compatible with multiple  databases.
 
-
-sistema-multiempresa/
-├── main.py                  # Punto de entrada de la aplicación
-├── interfaz_empresas.py     # Ventana principal (PyQt5)
-├── ventana_carga_empresas.py # Formulario de carga de datos
-├── db_manager.py            # Conexión y operaciones con SQLAlchemy
-├── guardar_datos.py         # Lógica para persistencia de datos
-├── format_excel.py          # Formato profesional para exportación a Excel
-├── excel_empresas.py        # Generación de archivos Excel
-├── reporte_empresas.py      # Reportes y resúmenes
-├── extraer_web.py           # Extracción de datos desde la web
-├── utilidades.py            # Validaciones y funciones auxiliares
-├── id_empresas.py           # Generación de IDs únicos
-├── reordenar_excel.py       # Reorganización de columnas en Excel
-├── requirements.txt         # Dependencias del proyecto
-├── README.md                # Documentación del sistema
-├── .gitignore               # Exclusión de archivos innecesarios
+## 🧱 Project Structure
 
-## ⚙️ Instalación
+multi-company-system/
+├── main.py                  # Application entry point
+├── interfaz_empresas.py     # Main window (PyQt5)
+├── ventana_carga_empresas.py # Data entry form
+├── db_manager.py            # SQLAlchemy connection and operations
+├── guardar_datos.py         # Data persistence logic
+├── format_excel.py          # Professional Excel formatting
+├── excel_empresas.py        # Excel file generation
+├── reporte_empresas.py      # Reports and summaries
+├── extraer_web.py           # Data extraction from the web
+├── utilidades.py            # Validations and helper functions
+├── id_empresas.py           # Unique ID generation
+├── reordenar_excel.py       # Excel column reordering
+├── requirements.txt         # Project dependencies
+├── README.md                # System documentation
+├── .gitignore               # Exclusion of unnecessary files
 
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/tu_usuario/sistema-multiempresa.git
-   cd sistema-multiempresa
+## ⚙️ Installation
 
-2. Crear entorno virtual e instalar dependencias:
+1. Clone the repository:
+git clone https://github.com/your_user/multi-company-system.git
+cd multi-company-system
+2. 	Create a virtual environment and install dependencies:
 python -m venv venv
 venv\Scripts\activate      # Windows
 pip install -r requirements.txt
-
-3. (Opcional) Instalar herramientas de desarrollo:
+3. 	(Optional) Install development tools:
 pip install -r dev-requirements.txt
 
-🖥️ Compatibilidad
-Este sistema fue desarrollado y probado en Windows 10/11 con Python 3.10+.
-La arquitectura modular permite adaptarlo fácilmente a otros entornos como Linux o macOS, ajustando rutas y activación de entorno virtual según el sistema operativo.
+🖥️ Compatibility
+This system was developed and tested on Windows 10/11 with Python 3.10+.
+Its modular architecture allows easy adaptation to Linux or macOS, adjusting paths and virtual environment activation accordingly.
 
-▶️ Uso
-Ejecutar la aplicación:
+▶️ Usage
+Run the application:
 python main.py
 
-📌 Próximos pasos
-- Exportar múltiples tablas en hojas separadas.
-- Agregar reportes PDF con ReportLab.
-- Mejorar validaciones y mensajes de error.
-- Documentación para despliegue en plataformas freelance.
+📌 Next Steps
+- Export multiple tables into separate sheets.
+- Add PDF reports with ReportLab.
+- Improve validations and error messages.
+- Documentation for deployment on freelance platforms.
 
-## Ejecución como aplicación de escritorio (.exe)
+## Desktop Application Execution (.exe)
 
-Además de ejecutar el sistema desde código fuente, podés usar la versión compilada como aplicación de escritorio:
+Besides running the system from source code, you can use the compiled desktop application:
 
-1. Ir a la carpeta `dist/` generada por PyInstaller.
-2. Ejecutar el archivo `SistemaMultiEmpresa.exe` haciendo doble clic.
-3. No requiere instalación de Python ni dependencias.
-4. Incluye ícono personalizado y ventana sin consola.
+- Go to the dist/ folder generated by PyInstaller.
+- Run the file MultiCompanySystem.exe by double-clicking.
+- No Python or dependencies installation required.
+- Includes custom icon and console-free window.
 
-Para compilar el `.exe` desde código fuente:
-```bash
-pyinstaller --onefile --windowed --icon="icon/icono_gen.ico" --name=SistemaMultiEmpresa main.py
+To compile the .exe from source code:
+pyinstaller --onefile --windowed --icon="icon/icono_gen.ico" --name=MultiCompanySystem main.py
 
-🧠 Autor
-Desarrollado por Sergio Sosa — apasionado por herramientas prácticas, modulares y profesionales para negocios reales.
+🧠 Author
+Developed by Sergio Sosa — passionate about practical, modular, and professional tools for real businesses.
 
-📊 Ejemplo de salida (Excel exportado)
-Al exportar los datos de empresas, el sistema genera un archivo .xlsx con formato profesional, listo para informes o auditorías. Las principales características del archivo son:
-- Encabezados en negrita y mayúsculas
-- Filtros automáticos activados
-- Fila de encabezado y columnas clave congeladas
-- Columnas con ancho ajustado automáticamente
-- Texto alineado y ajustado para mejor lectura
-Ejemplo de tabla exportada:
+📊 Example Output (Exported Excel)
+When exporting company data, the system generates a .xlsx file with professional formatting, ready for reports or audits. Key features include:
+- Bold and uppercase headers
+- Automatic filters enabled
+- Frozen header row and key columns
+- Automatically adjusted column widths
+- Text aligned and wrapped for better readability
+Example of exported table
 
 ![Ejemplo de App flet](image/flet_demo1.png)
 ![Ejemplo de ingreso de datos](image/ingreso_de_datos_demo2.png)
@@ -96,12 +93,9 @@ Ejemplo de tabla exportada:
 ![Ejemplo tabla Excel](image/Excel_demo5.png)
 ![Ejemplo tabla Excel](image/Excel_demo6.png)
 
+## 📄 License
+This project is distributed under the MIT License.
+See the [LICENSE](LICENSE) file for more details.
 
-## 📄 Licencia
-Este proyecto se distribuye bajo la Licencia MIT.  
-Consulta el archivo [LICENSE](LICENSE) para más detalles.
-
-👉 ¿Querés ver una presentación visual orientada a clientes?  
-Consultá el archivo [README_comercial.md](README_comercial.md)
-
-
+👉 Looking for a client-oriented visual presentation?
+Check out [README_comercial.md](README_comercial.md)
